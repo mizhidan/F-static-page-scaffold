@@ -1,20 +1,96 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
+* {
+  margin: 0 auto;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-family: "Fix for Mac Chrome 80", system-ui, -apple-system,
+    BlinkMacSystemFont, ".SFNSText-Regular", sans-serif;
+  background-color: #e9ebee;
 }
 
-* {
-  box-sizing: border-box;
+.header {
+  padding: 0 24%;
+  background-color: #3b5998;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 
-ul {
-  list-style: none;
+.logo {
+  width: 20%;
   margin: 0;
-  padding: 0;
+}
+
+.logo h1 {
+  float: left;
+}
+
+.register-button {
+  background-color: #42b72a;
+  border: 0;
+  margin: 5% 0 0 5%;
+  border-radius: 2px;
+  color: white;
+  height: 25px;
+  outline: none;
+}
+
+.join-facebook {
+  margin: 0;
+}
+
+.join-facebook:hover {
+  cursor: pointer;
+}
+
+.join-facebook::after {
+  content: "";
+  position: relative;
+  border: 5px solid transparent;
+  border-top-color: white;
+  top: 15px;
+  left: 10px;
+}
+
+.content {
+  width: 981px;
+}
+
+.content h1 {
+  margin: 20px 0;
+}
+
+.content-boxes {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.content-box {
+  background-color: white;
+  padding: 20px;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+  height: 400px;
+  width: 46%;
+}
+
+.content-box h2 {
+  margin: 20px 0;
+}
+
+.content-box p {
+  color: gray;
+  margin: 20px 0;
+}
+
+.content-box button {
+  width: 60px;
+  height: 30px;
+  margin-top: 10%;
+  border: 1px solid rgba(1, 1, 1, 0.2);
+  border-radius: 3px;
 }
